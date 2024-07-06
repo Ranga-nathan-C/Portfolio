@@ -124,7 +124,7 @@ body{
     top: 80px;
     background-color: rgba(255,255,255,0.8);
     border-radius: 1rem;
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     z-index: 99;
     overflow: hidden;
     transition: all .5s cubic-bezier(0.55, 0.085, 0.68 , 0.53) 0.1s;
@@ -407,7 +407,6 @@ textarea{
     color: var(--main-txt-color);
 }
 
-/* responsive design  */
 @media (max-width:768px) {
     :root{
        
