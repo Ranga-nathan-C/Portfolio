@@ -83,6 +83,7 @@ body{
 }
 
 .btn{
+    margin:10px;
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
@@ -174,7 +175,7 @@ body{
     position: relative;
     padding-bottom: 10px;
 }
-.project-img{animation: bounce 2s infinite ;}
+.project-img{animation: bounce 3s infinite ;}
 @keyframes bounce {
     0% {transform : translateY(0);}
     40% {transform : translateY(-20px);}
@@ -182,8 +183,8 @@ body{
 }
 
 .hero-img img{
-    width: 280px;
-    height: 270px;
+    width: 380px;
+    height: 370px;
     z-index: 2;
     border-radius: 100%;
 }
@@ -197,17 +198,16 @@ body{
     border-radius: 50%;
     box-shadow: var(--hero-img-shadow);
 }
-.hero-img{animation: slideIn 2s infinite ;}
 @keyframes slideIn {
     0% {transform : translateX(-10%);}
     40% {transform : translateX(0);}
 }
 
 .hero-content{
-    height: 35vh;
+    height: 43vh;
     width: 100%;
-    padding: 20px 0;
-    margin: 80px;
+    padding: 20px;
+    margin: 50px;
     flex-direction: column;
     text-align: center;
     color: var(--main-txt-color);
@@ -473,4 +473,30 @@ textarea{
         flex-direction: column;
     }
 
+}
+.img{
+    width:100px;
+    height: 100px;
+    padding: 10px; 
+}
+.grid-containerr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+@media (min-width:345px) and (max-width:728px) {
+    .img{
+        width:80px;
+        height: 80px;
+        padding: 10px; 
+    }
+    .hero-img img{
+        width: 280px;
+        height: 270px;
+        z-index: 2;
+        border-radius: 100%;
+        margin-left: 50px;
+    }
 }
