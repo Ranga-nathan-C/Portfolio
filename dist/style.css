@@ -490,13 +490,13 @@ textarea{
     .img{
         width:80px;
         height: 80px;
-        padding: 10px; 
+        padding: 5px; 
     }
     .hero-img img{
         width: 280px;
         height: 270px;
         z-index: 2;
         border-radius: 100%;
-        margin-left: 50px;
+        /* margin-left: 60px; */
     }
 }
